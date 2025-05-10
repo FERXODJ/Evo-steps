@@ -1,3 +1,8 @@
+body {
+    background-color: #ffffff; /* Color de fondo claro */
+}
+
+
 /* Navbar */
 .navbar {
     width: 100%; /* Ocupa todo el ancho de la pantalla */
@@ -52,15 +57,16 @@
 .content {
     margin-top: 50px; /* Ajusta el margen superior para evitar que el contenido quede debajo del navbar */
     padding: 20px;
-    background-color: #ecf0f1;
+    background-color: #ecf0f100;
 }
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    padding-bottom: 40%; /* Cambia la relación de aspecto para hacerlo más pequeño */
     height: 0;
     overflow: hidden;
-    max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+    max-width: 80%; /* Reduce el ancho máximo del video */
+    margin: 0 auto; /* Centra el video horizontalmente */
     background-color: #000; /* Fondo negro mientras carga el video */
 }
 
@@ -87,3 +93,13 @@
     left: 15px; /* Ajusta la posición horizontal */
     z-index: 1; /* Asegura que el logo esté sobre otros elementos */
 }
+
+.titulo-home{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    color: #a625fc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+

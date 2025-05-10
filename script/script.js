@@ -10,3 +10,4 @@ document.getElementById('boton-carga').addEventListener('click', function () {
         window.location.href = 'home.html'; // Cambia 'home.html' por la URL de tu página de inicio
     }, 5000);
 });
+
