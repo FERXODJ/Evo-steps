@@ -1,97 +1,182 @@
 
 
 body {
-    background-image: url('../img/fondo01.jpg'); /* Ajusta la ruta si es necesario */
-    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/01.jpg'); /* Ajusta la ruta si es necesario */
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment:fixed;
+    background-attachment: fixed;
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Asegura que el body ocupe toda la pantalla */
+}
+
+.opaco {
+    background-color: rgba(2, 1, 1, 0.5); /* Cambia el valor de opacidad aquí */
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    width: 100vw; /* Ocupa el 100% del ancho de la ventana */
+    overflow: hidden; /* Asegura que no haya desbordamiento */
+    position: fixed; /* Fija el elemento para evitar scroll */
+    top: 0; /* Asegura que comience desde la parte superior */
+    left: 0; /* Asegura que comience desde la izquierda */
     
 }
 
-.overlay {
-    position: absolute; /* Cubre todo el fondo */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(54, 51, 51, 0.5); /* Color oscuro semitransparente */
-    z-index: 1; /* Coloca el contenedor sobre el fondo */
-}
-
-
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centra el contenedor */
-    z-index: 2; /* Coloca el contenido por encima del overlay */
-    color: white; /* Texto blanco para contraste */
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2.5rem;
-    text-align: center;
+.container01 {
+    background-color: rgba(98, 96, 102, 0.5);
     padding: 20px;
-    background-color: rgba(116, 47, 226, 0.315); /* Fondo semitransparente */
-    border-radius: 10px;
-    animation: fadeIn 2s ease-in-out; /* Aplica la animación */
+    width: 50%;
+    height: 50vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    animation: fadeIn 1.5s ease-in-out forwards; /* Aplica la animación y mantiene el estado final */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra para destacar el contenedor */
+    overflow: hidden; /* Evita que el contenido se desborde */
 }
 
-/* Animación de aparición */
+
 @keyframes fadeIn {
     from {
-        opacity: 0;
-        transform: translate(-50%, -60%); /* Inicia un poco más arriba */
+        opacity: 0; /* Comienza invisible */
+        transform: scale(0.8); /* Comienza más pequeño */
     }
     to {
-        opacity: 1;
-        transform: translate(-50%, -50%); /* Termina centrado */
+        opacity: 1; /* Termina completamente visible */
+        transform: scale(1); /* Termina en su tamaño original */
     }
 }
 
-.logo{
-    width: 25vh; /* Ajusta el tamaño según sea necesario */
-    height: 15vh;
-    margin-bottom: 20px; /* Espacio entre el logo y el texto */
+.titulo {
+    color: white; /* Cambia el color del texto a blanco */
+    font-size: 2.5rem;
+    text-align: center; /* Centra el texto */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
+    font-weight: bold; /* Cambia el peso de la fuente a negrita */
+    margin: 10px 0; /* Espaciado superior e inferior */
 }
 
-.container p {
-    margin: 0; /* Elimina el margen del párrafo */
-    padding: 0; /* Elimina cualquier relleno del párrafo */
-    text-align: center; /* Centra el texto si es necesario */
+
+.logo {
+    width: 100%; /* Ajusta el tamaño relativo al contenedor */
+    max-width: 300px; /* Aumenta el tamaño máximo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 10px 0; /* Espaciado entre el texto y la imagen */
 }
 
-.subtitulo{
+
+.subtitulo {
+    color: white; /* Cambia el color del texto a blanco */
     font-size: 1.5rem;
-    transform: translateY(-50px); /* Mueve el subtítulo un poco hacia arriba */
+    text-align: center; /* Centra el texto */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente a Arial */
+    font-weight: bold; /* Cambia el peso de la fuente a negrita */
+    margin: 10px 0; /* Espaciado superior e inferior */
+
 }
 
-.btn-evolucionar {
-    display: flex; /* Alinea el contenido del botón en fila */
-    align-items: center; /* Centra verticalmente el texto y la imagen */
-    justify-content: center; /* Centra horizontalmente el contenido */
-    padding: 15px 30px; /* Espaciado interno del botón */
-    font-size: 1rem; /* Tamaño del texto */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(0, 0, 0); /* Color del texto */
-    background-color: #ffffff; /* Color de fondo del botón */
-    border: none; /* Elimina el borde */
-    border-radius: 5px; /* Bordes redondeados */
+.boton {
+    padding: 15px 70px;
+    border-radius: 50px;
+    border: none; /* Elimina el borde del botón */
+    font-size: 1.2rem;
+    background-color: rgba(59, 40, 226, 0.5); /* Cambia el color de fondo */
+    color: rgb(255, 255, 255); /* Asegura que el texto sea visible */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: background-color 0.3s ease; /* Animación al pasar el mouse */
-    margin: 0 auto; /* Centra el botón horizontalmente dentro del contenedor */
+    font-weight: bold; /* Cambia el peso de la fuente a negrita */
+    display: flex; /* Habilita flexbox para alinear el contenido */
+    align-items: center; /* Centra verticalmente el texto y el icono */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 10px; /* Espaciado entre el texto y el icono */
+    margin-top: 20px; /* Espaciado superior */
+    position: relative; /* Necesario para el pseudo-elemento */
+    overflow: hidden; /* Oculta el contenido que se desborde */
 }
 
-.btn-evolucionar:hover {
-    background-color: #ab79c9; /* Color de fondo al pasar el mouse */
-    color: white; /* Cambia el color del texto al pasar el mouse */
+
+
+.boton.cargando::after {
+    transform: scaleX(1); /* Llena el botón horizontalmente */
 }
 
+.boton.cargando {
+    pointer-events: none; /* Desactiva el botón mientras se carga */
+}
+
+.boton:hover {
+    background-color: rgba(159, 151, 226, 0.5); /* Cambia el color de fondo al pasar el mouse */
+}
 
 .icono-boton {
-    width: 25px; /* Ajusta el tamaño del icono */
-    height: 25px; /* Ajusta el tamaño del icono */
-    margin-left: 8px; /* Espaciado entre el texto y el icono */
-    margin-right: 0; /* Elimina el margen a la izquierda */
+    width: 2em; /* Ajusta el tamaño del icono */
+    height: 1.2em;
 }
 
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 1.5rem; /* Reduce el tamaño del texto */
+    }
 
+    .subtitulo {
+        font-size: 1rem; /* Reduce el tamaño del subtítulo */
+    }
+
+    .logo {
+        max-width: 200px; /* Reduce el tamaño máximo del logo */
+    }
+
+    .boton {
+        font-size: 0.9rem; /* Reduce el tamaño del texto del botón */
+        padding: 8px 15px; /* Ajusta el relleno del botón */
+    }
+}
+
+/* Contenedor de la animación de carga */
+.cargando-overlay {
+    position: fixed; /* Fija el contenedor en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    z-index: 1000; /* Asegura que esté sobre todo el contenido */
+    visibility: hidden; /* Oculta el contenedor por defecto */
+    opacity: 0; /* Oculta visualmente */
+    transition: opacity 0.3s ease; /* Transición suave */
+}
+
+.cargando-overlay.activo {
+    visibility: visible; /* Muestra el contenedor */
+    opacity: 1; /* Hace visible el contenedor */
+}
+
+/* Animación del círculo giratorio */
+.cargando-overlay::after {
+    content: ''; /* Crea el círculo */
+    display: block; /* Asegura que el pseudo-elemento sea visible */
+    width: 50px; /* Ancho del círculo */
+    height: 50px; /* Altura del círculo */
+    border: 5px solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
+    border-top: 5px solid white; /* Borde superior para el efecto de giro */
+    border-radius: 50%; /* Hace que sea un círculo */
+    animation: spin 1s linear infinite; /* Animación de giro */
+}
+
+/* Animación de giro */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

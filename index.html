@@ -7,16 +7,21 @@
     <title>Evo Steps</title>
 </head>
 <body>
-    <div class="overlay"></div> <!-- Contenedor con color opaco -->
-    <div class="container">
-        Felicidades Bienvenido a <br>
-        <img src="img/logo.webp" alt="logo" class="logo"> <br>
-        <p class="subtitulo">En esta plataforma tendrás la información para llevar tu negocio al siguiente nivel</p>
+    <div class="opaco"></div> <!-- Contenedor con color opaco -->
+    <div class="container01">
+        <p class="titulo">Felicidades, Bienvenido a</p>
+        <img src="img/logo.webp" alt="Logo" class="logo">
+        <p class="subtitulo">En esta Plataforma se Encuentran <br> Tus Primeros Pasos</p>
 
-        <button class="btn-evolucionar">
-            Es Momento de <br>Evolucionar
+        <button class="boton" id="boton-carga">
+            Es Momento de Evolucionar
             <img src="img/Avion.svg" alt="Avión" class="icono-boton">
         </button>
     </div>
+
+    <!-- Contenedor de la animación de carga -->
+    <div class="cargando-overlay" id="cargando-overlay"></div>
+
+    <script src="script/script.js"></script>
 </body>
 </html>
