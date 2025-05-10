@@ -24,7 +24,7 @@ body {
 .navbar-menu {
     list-style: none;
     display: flex; /* Coloca los elementos en línea */
-    margin: 0 auto; /* Centra el menú horizontalmente */
+    margin: 0 auto 0 250px; /* Centra el menú horizontalmente */
     padding: 0;
 }
 
