@@ -62,10 +62,10 @@ body {
 
 .video-container {
     position: relative;
-    padding-bottom: 40%; /* Cambia la relación de aspecto para hacerlo más pequeño */
+    padding-bottom: 25%; /* Cambia la relación de aspecto para hacerlo más pequeño */
     height: 0;
     overflow: hidden;
-    max-width: 80%; /* Reduce el ancho máximo del video */
+    max-width: 40%; /* Reduce el ancho máximo del video */
     margin: 0 auto; /* Centra el video horizontalmente */
     background-color: #000; /* Fondo negro mientras carga el video */
 }
@@ -95,11 +95,28 @@ body {
 }
 
 .titulo-home{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 70px;
     color: #a625fc;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.sutitulo-home{
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #9d9bec;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.sutitulo-home2{
+     font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #59595c;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
