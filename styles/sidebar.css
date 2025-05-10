@@ -1,0 +1,89 @@
+/* Navbar */
+.navbar {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    background-color: #8a55ec; /* Fondo oscuro */
+    color: white;
+    display: flex; /* Habilita flexbox */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 15px 15px; /* Reduce el espacio interno para mantener el tamaño compacto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra debajo del navbar */
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que esté sobre todo el contenido */
+    height: 60px; /* Mantiene la altura fija del navbar */
+    overflow: hidden; /* Evita que el logo desborde el navbar */
+}
+
+/* Menú del navbar */
+.navbar-menu {
+    list-style: none;
+    display: flex; /* Coloca los elementos en línea */
+    margin: 0 auto; /* Centra el menú horizontalmente */
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0 30px; /* Espaciado entre los elementos */
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem; /* Reduce el tamaño de la fuente */
+    line-height: 1.2; /* Ajusta la altura de la línea */
+    padding: 10px 15px; /* Reduce el espacio interno */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 1px;
+}
+
+.navbar-menu a:hover {
+    background-color: #6c1bf0; /* Cambia el fondo al pasar el mouse */
+}
+
+.navbar-menu a.active {
+    background-color: #6c1bf0; /* Color de fondo para la página activa */
+    color: #ffffff; /* Color del texto para la página activa */
+    font-weight: bold; /* Resalta el texto */
+}
+
+/* Contenido principal */
+.content {
+    margin-top: 50px; /* Ajusta el margen superior para evitar que el contenido quede debajo del navbar */
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+    background-color: #000; /* Fondo negro mientras carga el video */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Elimina el borde del iframe */
+}
+
+/* Imagen del logo */
+
+.logo_life {
+    width: auto; /* Ajusta automáticamente el ancho según la altura */
+    height: 200px; /* Tamaño grande del logo */
+    margin: 0; /* Elimina márgenes adicionales */
+    object-fit: contain; /* Asegura que la imagen no se distorsione */
+    display: block; /* Asegura que se comporte como un bloque */
+    position: absolute; /* Saca el logo del flujo normal */
+    top: 50%; /* Centra verticalmente dentro del navbar */
+    transform: translateY(-50%); /* Ajusta la posición para centrarlo */
+    left: 15px; /* Ajusta la posición horizontal */
+    z-index: 1; /* Asegura que el logo esté sobre otros elementos */
+}
