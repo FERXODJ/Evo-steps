@@ -178,7 +178,7 @@ button:active {
 }
 
 .tab-button.active {
-    background-color: #6c1bf0; /* Color más oscuro para el botón activo */
+    background-color: #0010f5; /* Color más oscuro para el botón activo */
 }
 
 /* Ocultar contenido no activo */
@@ -223,12 +223,14 @@ button:active {
     font-family: 'Poppins', sans-serif;
     color: #333; /* Color del texto */
     word-wrap: break-word; /* Asegura que el texto no desborde */
+    font-size: 18px; /* Aumenta el tamaño del texto */
+    line-height: 1.8; /* Mejora el espaciado entre líneas */
 }
 
 .training-title {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 200px;
     color: #000; /* Color del título */
 }
 
@@ -236,12 +238,16 @@ button:active {
     font-size: 16px;
     line-height: 1.6; /* Espaciado entre líneas */
     margin-bottom: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    transform: translateY(-140px);
 }
 
 .training-duration {
     font-size: 16px;
     font-weight: bold;
-    color: #555; /* Color del texto de duración */
+    color: #000000; /* Color del texto de duración */
+    transform: translateY(-90px);
 }
 
 /* Imagen */
