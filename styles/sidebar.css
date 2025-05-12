@@ -1,12 +1,26 @@
 body {
-    background-color: #f3f0ff; /* Fondo púrpura claro */
+    background-image: url('../img/FONDOTEC.png'); /* Cambia la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    position: relative; /* Necesario para usar ::before */
+}
+
+body::before {
+    content: ''; /* Crea una capa vacía */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa negra semitransparente (ajusta la opacidad) */
+    z-index: -1; /* Asegura que la capa esté detrás del contenido */
 }
 
 
 /* Navbar */
 .navbar {
     width: 100%; /* Ocupa todo el ancho de la pantalla */
-    background-color: #8a55ec; /* Fondo oscuro */
+    background-color: #010e3a; /* Fondo oscuro */
     color: white;
     display: flex; /* Habilita flexbox */
     align-items: center; /* Centra verticalmente los elementos */
@@ -41,16 +55,18 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s ease;
     margin-right: 1px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .navbar-menu a:hover {
-    background-color: #6c1bf0; /* Cambia el fondo al pasar el mouse */
+    background-color: #3b1bf094; /* Cambia el fondo al pasar el mouse */
 }
 
 .navbar-menu a.active {
-    background-color: #6c1bf0; /* Color de fondo para la página activa */
+    background-color: #3b1bf094; /* Color de fondo para la página activa */
     color: #ffffff; /* Color del texto para la página activa */
     font-weight: bold; /* Resalta el texto */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Contenido principal */
@@ -95,22 +111,30 @@ body {
 }
 
 .titulo-home{
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     text-align: center;
     margin-top: 70px;
-    color: #8a55ec; /* Púrpura del sidebar */
+    color: #ffffff; /* Púrpura del sidebar */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.gradient-text {
+    background: linear-gradient(to right, #6f0dbe, #780bdf, #1fe2fc ); /* Degradado de blanco a azul celeste */
+    -webkit-background-clip: text; /* Compatibilidad con navegadores basados en WebKit (Chrome, Safari) */
+    -moz-background-clip: text; /* Compatibilidad con navegadores basados en Gecko (Firefox) */
+    background-clip: text; /* Versión estándar */
+    -webkit-text-fill-color: transparent; /* Hace el texto transparente para mostrar el degradado */
+}
+
 .sutitulo-home{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    margin-top: 50px;
-    color: #333;
-    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    transform: translateY(-35px);
 }
 
 .sutitulo-home2{
@@ -118,7 +142,7 @@ body {
     text-align: center;
     font-weight: bold;
     margin-top: 50px;
-    color: #59595c;
+    color: #ffffff;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -127,12 +151,12 @@ body {
     text-align: center;
     font-weight: bold;
     margin-top: 50px;
-    color: #59595c;
+    color: #ffffff;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 button {
-    background-color: #ac1bf0; /* Color azul */
+    background-color: #0c005094; /* Color azul */
     color: white; /* Texto blanco */
     border: none; /* Sin bordes */
     border-radius: 20px; /* Bordes redondeados */
@@ -146,12 +170,12 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Color más oscuro al pasar el cursor */
+    background-color: #3b1bf094; /* Color más oscuro al pasar el cursor */
     transform: scale(1.05); /* Aumenta ligeramente el tamaño */
 }
 
 button:active {
-    background-color: #003f7f; /* Color más oscuro al hacer clic */
+    background-color: #070049; /* Color más oscuro al hacer clic */
     transform: scale(0.95); /* Reduce ligeramente el tamaño */
 }
 
@@ -165,7 +189,7 @@ button:active {
 
 /* Botón activo */
 .tab-button {
-    background-color: #ac1bf0;
+    background-color: #1b00b4af;
     color: white;
     border: none;
     border-radius: 20px;
@@ -178,7 +202,7 @@ button:active {
 }
 
 .tab-button.active {
-    background-color: #0010f5; /* Color más oscuro para el botón activo */
+    background-color: #674dfcc9; /* Color más oscuro para el botón activo */
 }
 
 /* Ocultar contenido no activo */
