@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff; /* Color de fondo claro */
+    background-color: #f3f0ff; /* Fondo púrpura claro */
 }
 
 
@@ -99,17 +99,18 @@ body {
     font-weight: bold;
     text-align: center;
     margin-top: 70px;
-    color: #a625fc;
+    color: #8a55ec; /* Púrpura del sidebar */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .sutitulo-home{
-    font-size: 70px;
+    font-size: 50px;
     text-align: center;
-    font-weight: bold;
     margin-top: 50px;
-    color: #9d9bec;
-    font-family:'Courier New', Courier, monospace;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .sutitulo-home2{
@@ -120,3 +121,152 @@ body {
     color: #59595c;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.subtitulo-descripcion{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #59595c;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    background-color: #ac1bf0; /* Color azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin: 5px; /* Espaciado entre botones */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
+
+}
+
+button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+button:active {
+    background-color: #003f7f; /* Color más oscuro al hacer clic */
+    transform: scale(0.95); /* Reduce ligeramente el tamaño */
+}
+
+.button-container {
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centra los botones horizontalmente */
+    flex-wrap: wrap; /* Permite que los botones se ajusten en varias líneas si es necesario */
+    gap: 10px; /* Espaciado entre los botones */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Botón activo */
+.tab-button {
+    background-color: #ac1bf0;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tab-button.active {
+    background-color: #6c1bf0; /* Color más oscuro para el botón activo */
+}
+
+/* Ocultar contenido no activo */
+.training-content {
+    display: none;
+}
+
+/* Mostrar contenido activo */
+.training-content.active {
+    display: block;
+}
+
+/* Contenedor principal */
+/* Contenedor principal */
+.training-section {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff; /* Fondo blanco */
+    max-width: 900px; /* Ancho máximo del contenedor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Asegura que el contenido no desborde */
+}
+
+/* Contenido interno */
+.training-content {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: space-between; /* Asegura que el texto y la imagen estén separados */
+    gap: 20px; /* Espaciado entre texto e imagen */
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    flex-wrap: wrap; /* Permite que el contenido se ajuste en pantallas pequeñas */
+}
+
+/* Texto */
+.training-text {
+    flex: 2; /* El texto ocupa más espacio */
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Color del texto */
+    word-wrap: break-word; /* Asegura que el texto no desborde */
+}
+
+.training-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000; /* Color del título */
+}
+
+.training-description {
+    font-size: 16px;
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 10px;
+}
+
+.training-duration {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555; /* Color del texto de duración */
+}
+
+/* Imagen */
+.training-image {
+    flex: 1; /* La imagen ocupa menos espacio */
+    text-align: right; /* Alinea la imagen a la derecha */
+}
+
+.training-image img {
+    max-width: 100%; /* La imagen no excede el ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.training-content {
+    display: none;
+}
+
+/* Mostrar contenido activo */
+.training-content.active {
+    display: flex; /* Asegura que el diseño Flexbox funcione */
+}
+
+
+
+
+ 
