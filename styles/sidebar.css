@@ -95,6 +95,14 @@ body::before {
     border: none; /* Elimina el borde del iframe */
 }
 
+/* Media Query para pantallas más pequeñas (720x1080 o similares) */
+@media (max-width: 1280px) and (max-height: 1024px) {
+    .video-container {
+        padding-bottom: 50%; /* Relación de aspecto 3:4 */
+        max-width: 80%; /* Ajusta el ancho máximo del video */
+    }
+}
+
 /* Imagen del logo */
 
 .logo_life {
@@ -224,7 +232,7 @@ button:active {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    background-color: #fff; /* Fondo blanco */
+    background-color: #ffffffc0; /* Fondo blanco */
     max-width: 900px; /* Ancho máximo del contenedor */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
     overflow: hidden; /* Asegura que el contenido no desborde */
@@ -294,6 +302,55 @@ button:active {
 /* Mostrar contenido activo */
 .training-content.active {
     display: flex; /* Asegura que el diseño Flexbox funcione */
+}
+
+/* Contenedor principal de los grupos */
+.grupos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas si es necesario */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espaciado entre los botones */
+    margin: 40px 20px; /* Espaciado externo */
+}
+
+/* Botones de los grupos */
+.grupo-boton {
+    display: flex;
+    align-items: center; /* Centra el ícono y el texto verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    background-color: #1b00b4af; /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 50px; /* Bordes redondeados */
+    padding: 15px 20px; /* Espaciado interno */
+    width: 180px; /* Ancho fijo */
+    height: 30px; /* Altura fija */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animación suave */
+    text-decoration: none; /* Elimina subrayado si se usa como enlace */
+    text-align:left;
+}
+
+/* Efecto hover en los botones */
+.grupo-boton:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+    background-color: #674dfcc9; /* Color de fondo */
+}
+
+/* Ícono dentro del botón */
+.grupo-icono {
+    width: 30px; /* Tamaño del ícono */
+    height: 30px;
+    margin-right: 10px; /* Espaciado entre el ícono y el texto */
+}
+
+/* Texto dentro del botón */
+.grupo-texto {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    margin: 0; /* Elimina márgenes adicionales */
 }
 
 
