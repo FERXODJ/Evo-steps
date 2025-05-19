@@ -498,7 +498,7 @@ button:active {
     height: 100px; /* Alto de las imágenes */
     object-fit: contain; /* Ajusta la imagen sin distorsionarla */
     margin-bottom: 10px; /* Espaciado entre la imagen y el texto */
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 /* Estilo para el texto debajo de las imágenes */
