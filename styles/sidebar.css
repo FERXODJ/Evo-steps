@@ -325,11 +325,11 @@ button:active {
 
 /* Contenedor principal de los grupos */
 .grupos-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
-    justify-content: center; /* Centra los elementos horizontalmente */
+    display: flex; /* Coloca los elementos en una fila */
+    justify-content: center; /* Centra los contenedores horizontalmente */
     gap: 20px; /* Espaciado entre los contenedores */
-    margin: 40px 20px; /* Espaciado externo */
+    margin-top: 20px; /* Espaciado superior */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si no caben */
 }
 
 /* Tarjeta de cada grupo */
@@ -337,12 +337,14 @@ button:active {
     display: flex;
     flex-direction: column; /* Coloca los elementos en una columna */
     align-items: center; /* Centra los elementos horizontalmente */
-    background-color: rgb(249, 249, 249,0.7); /* Fondo claro */
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 20px; /* Espaciado interno */
-    width: 250px; /* Ancho fijo */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de tarjeta */
+    justify-content: space-between; /* Asegura que los botones estén en la parte inferior */
     text-align: center; /* Centra el texto */
+    background-color: rgb(249, 249, 249,0.8); /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 250px; /* Ancho fijo para todas las tarjetas */
+    height: 300px; /* Altura fija para alinear los elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de tarjeta */
 }
 
 /* Imagen dentro de la tarjeta */
@@ -355,7 +357,7 @@ button:active {
 
 /* Texto del grupo */
 .grupo-texto {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-bottom: 15px; /* Espaciado debajo del texto */
     color: #000000; /* Color del texto */
@@ -373,6 +375,7 @@ button:active {
     border-radius: 10px; /* Bordes redondeados */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
     cursor: pointer;
+    margin-top: auto; /* Empuja el botón hacia la parte inferior del contenedor */
 }
 
 /* Efecto hover en el botón */
@@ -380,6 +383,7 @@ button:active {
     background-color: #1ebe57; /* Color más oscuro al pasar el mouse */
     transform: scale(1.05); /* Aumenta ligeramente el tamaño */
 }
+
 
 /* Contenedor para centrar el texto y el botón */
 .primeros-pasos-container {
