@@ -98,8 +98,8 @@ body::before {
 /* Media Query para pantallas más pequeñas (720x1080 o similares) */
 @media (max-width: 1280px) and (max-height: 1024px) {
     .video-container {
-        padding-bottom: 50%; /* Relación de aspecto 3:4 */
-        max-width: 80%; /* Ajusta el ancho máximo del video */
+        padding-bottom: 35%; /* Relación de aspecto 3:4 */
+        max-width: 60%; /* Ajusta el ancho máximo del video */
     }
 }
 
@@ -161,6 +161,25 @@ body::before {
     margin-top: 50px;
     color: #ffffff;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sutitulo-pasos{
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transform: translateY(50px);
+}
+
+.sutitulo-pasos2{
+    font-size: 30px;
+   text-align: center;
+   font-weight: bold;
+   margin-top: 80px;
+   color: #ffffff;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 button {
@@ -307,50 +326,240 @@ button:active {
 /* Contenedor principal de los grupos */
 .grupos-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que los botones se ajusten en varias filas si es necesario */
-    justify-content: center; /* Centra los botones horizontalmente */
-    gap: 20px; /* Espaciado entre los botones */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espaciado entre los contenedores */
     margin: 40px 20px; /* Espaciado externo */
 }
 
-/* Botones de los grupos */
-.grupo-boton {
+/* Tarjeta de cada grupo */
+.grupo-card {
     display: flex;
-    align-items: center; /* Centra el ícono y el texto verticalmente */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    background-color: #1b00b4af; /* Color de fondo */
-    color: white; /* Color del texto */
-    border-radius: 50px; /* Bordes redondeados */
-    padding: 15px 20px; /* Espaciado interno */
-    width: 180px; /* Ancho fijo */
-    height: 30px; /* Altura fija */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animación suave */
-    text-decoration: none; /* Elimina subrayado si se usa como enlace */
-    text-align:left;
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    background-color: rgb(249, 249, 249,0.7); /* Fondo claro */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    width: 250px; /* Ancho fijo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar efecto de tarjeta */
+    text-align: center; /* Centra el texto */
 }
 
-/* Efecto hover en los botones */
-.grupo-boton:hover {
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
-    background-color: #674dfcc9; /* Color de fondo */
-}
-
-/* Ícono dentro del botón */
+/* Imagen dentro de la tarjeta */
 .grupo-icono {
-    width: 30px; /* Tamaño del ícono */
-    height: 30px;
-    margin-right: 10px; /* Espaciado entre el ícono y el texto */
+    width: 80px; /* Tamaño de la imagen */
+    height: 80px;
+    margin-bottom: 15px; /* Espaciado debajo de la imagen */
+    border-radius: 50px;
 }
 
-/* Texto dentro del botón */
+/* Texto del grupo */
 .grupo-texto {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px; /* Espaciado debajo del texto */
+    color: #000000; /* Color del texto */
+}
+
+/* Botón de WhatsApp */
+.grupo-boton {
+    display: inline-block;
+    background-color: #25d366; /* Color verde de WhatsApp */
+    color: white;
+    text-decoration: none; /* Elimina el subrayado */
     font-size: 1rem;
     font-weight: bold;
-    font-family: 'Arial', sans-serif;
-    margin: 0; /* Elimina márgenes adicionales */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
+    cursor: pointer;
+}
+
+/* Efecto hover en el botón */
+.grupo-boton:hover {
+    background-color: #1ebe57; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+/* Contenedor para centrar el texto y el botón */
+.primeros-pasos-container {
+    display: flex;
+    flex-direction: column; /* Coloca el texto y el botón en una columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    margin: 40px 0; /* Espaciado externo */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo del texto */
+.primeros-pasos-texto {
+    font-size: 1.8rem;
+    color: #ffffff; /* Color del texto */
+    margin-bottom: 20px; /* Espaciado debajo del texto */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Estilo del botón */
+.primeros-pasos-boton {
+    display: inline-block; /* Asegura que el enlace se comporte como un botón */
+    background-color: #1b00b4af; /* Color verde */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border: none; /* Sin bordes */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
+    margin-top: 20px;
+}
+
+/* Efecto hover en el botón */
+.primeros-pasos-boton:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+.paso1 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px; /* Espaciado interno */
+    background-color: #2f6fe6;
+    width: auto; /* Ajusta el ancho al contenido */
+    max-width: 200px; /* Limita el ancho máximo */
+    margin: 50px auto; /* Centra el elemento horizontalmente */
+    margin-top: 100px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+
+.paso1-1{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.paso01 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px; /* Espaciado interno */
+    background-color: #2f6fe6;
+    width: auto; /* Ajusta el ancho al contenido */
+    max-width: 400px; /* Limita el ancho máximo */
+    margin: 50px auto; /* Centra el elemento horizontalmente */
+    margin-top: 100px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que exceda el ancho */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+}
+
+
+
+/* Contenedor de las aplicaciones */
+.apps-container {
+    display: flex; /* Coloca las imágenes en una fila */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 20px; /* Espaciado entre las imágenes */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilo para cada aplicación */
+.app {
+    display: flex;
+    flex-direction: column; /* Coloca la imagen y el texto en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para las imágenes */
+.app-icon {
+    width: 100px; /* Ancho de las imágenes */
+    height: 100px; /* Alto de las imágenes */
+    object-fit: contain; /* Ajusta la imagen sin distorsionarla */
+    margin-bottom: 10px; /* Espaciado entre la imagen y el texto */
+    border-radius: 50px;
+}
+
+/* Estilo para el texto debajo de las imágenes */
+.app-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff; /* Color del texto */
+}
+
+.video-container {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.video-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaciado entre los botones */
+    margin-top: 20px;
+}
+
+.video-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #2f6fe6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.video-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.video-button:hover:not(:disabled) {
+    background-color: #1e4bb8;
+}
+
+/* Contenedor del botón */
+.plan-accion-container {
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    margin-top: 20px; /* Espaciado superior opcional */
+}
+
+/* Estilo del botón */
+.plan-accion-boton {
+    display: inline-block; /* Hace que el enlace se comporte como un botón */
+    text-align: center;
+    background-color: #1b00b4af; /* Color verde */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 50px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
+}
+
+/* Efecto hover en el botón */
+.plan-accion-boton:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
 }
 
 
