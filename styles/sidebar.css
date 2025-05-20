@@ -361,6 +361,7 @@ button:active {
     font-weight: bold;
     margin-bottom: 15px; /* Espaciado debajo del texto */
     color: #000000; /* Color del texto */
+    
 }
 
 /* Botón de WhatsApp */
@@ -498,7 +499,7 @@ button:active {
     height: 100px; /* Alto de las imágenes */
     object-fit: contain; /* Ajusta la imagen sin distorsionarla */
     margin-bottom: 10px; /* Espaciado entre la imagen y el texto */
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 /* Estilo para el texto debajo de las imágenes */
@@ -506,6 +507,7 @@ button:active {
     font-size: 1.1rem;
     font-weight: bold;
     color: #ffffff; /* Color del texto */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .video-container {
