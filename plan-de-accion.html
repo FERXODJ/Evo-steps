@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evo Steps-Home</title>
+    <title>Evo Steps-Plan-de-accion</title>
     <link rel="stylesheet" href="styles/sidebar.css">
 </head>
 <body>
@@ -19,22 +19,27 @@
         </ul>
     </div>
 
-    <div class="content">
-        <h1>Hola</h1>
-        <p>Bienvenido a la página de inicio.</p>
-    
-        <!-- Video de YouTube -->
-        <div class="video-container">
-            <iframe 
-                width="100" 
-                height="100" 
-                src="https://www.youtube.com/embed/-ylLzZ2GeLc" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </div>
+     <div class="content">
+        <h1 class="sutitulo-pasos">Planes de Acción</h1>
+
+        <div class="cards-container">
+  <div class="card">
+    <div class="circle-image">
+      <img src="img/laptop tra.jpeg" alt="Trading">
     </div>
+    <div class="card-title">Trading</div>
+    <button class="card-btn" disabled>Ir</button>
+  </div>
+  <div class="card">
+    <div class="circle-image">
+      <img src="img/laptop netw.jpeg" alt="Networkmarketing">
+    </div>
+    <div class="card-title">Networkmarketing</div>
+    <button class="card-btn" onclick="window.location.href='Networkmarketing.html'">Ir</button>
+  </div>
+</div>
+    
+    </div>
+
 </body>
 </html>

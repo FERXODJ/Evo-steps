@@ -1,53 +1,72 @@
-// Lista de videos y títulos
 const videos = [
-    { title: "Capacitación de Arranque", src: "https://www.youtube.com/embed/-ylLzZ2GeLc" },
-    { title: "Aprende a Edificar", src: "https://www.youtube.com/embed/cVyF-OUiBz4" },
-    { title: "¿Cómo hacer una lista?", src: "https://www.youtube.com/embed/X1HzsWaK4cI" },
-    { title: "Cómo Prospectar", src: "https://www.youtube.com/embed/MR5OyHY6xjo" },
-    { title: "¿Cómo hacer una invitación irresistible?", src: "https://www.youtube.com/embed/WoqvlnDp7_Y" },
-    { title: "Tipos de presentaciones", src: "https://www.youtube.com/embed/UI3E01UQXPU" },
-    { title: "¿Cómo hacer un cierre?", src: "https://www.youtube.com/embed/diYRhA2P92Q?start=1" },
-    { title: "¿Cómo hacer un seguimiento?", src: "https://www.youtube.com/embed/kqxD6Y6UgcA" }
+    {
+        modulo: "MÓDULO 1",
+        subtitulo: "Aprende a Edificar",
+        src: "https://www.youtube.com/embed/cVyF-OUiBz4"
+    },
+    {
+        modulo: "MÓDULO 2",
+        subtitulo: "¿Cómo hacer una lista?",
+        src: "https://www.youtube.com/embed/X1HzsWaK4cI"
+    },
+
+    {
+        modulo: "MÓDULO 3",
+        subtitulo: "¿Cómo Prospectar?",
+        src: "https://www.youtube.com/embed/MR5OyHY6xjo"
+    },
+
+    {
+        modulo: "MÓDULO 4",
+        subtitulo: "¿Cómo hacer una invitación irresistible?",
+        src: "https://www.youtube.com/embed/WoqvlnDp7_Y"
+    },
+
+    {
+        modulo: "MÓDULO 5",
+        subtitulo: "Tipos de presentaciones",
+        src: "https://www.youtube.com/embed/UI3E01UQXPU"
+    },
+
+    {
+        modulo: "MÓDULO 6",
+        subtitulo: "¿Cómo hacer un cierre?",
+        src: "https://www.youtube.com/embed/diYRhA2P92Q?start=1"
+    },
+
+    {
+        modulo: "MÓDULO 7",
+        subtitulo: "¿Cómo hacer un seguimiento?",
+        src: "https://www.youtube.com/embed/kqxD6Y6UgcA"
+    },
+    // Agrega más objetos aquí para más módulos/videos
 ];
 
-// Variables para manejar el estado
-let currentVideoIndex = 0;
+let current = 0;
 
-// Referencias a los elementos HTML
-const videoTitle = document.getElementById("video-title");
-const videoFrame = document.getElementById("video-frame");
-const nextButton = document.getElementById("next-button");
-const prevButton = document.getElementById("prev-button");
-
-// Función para actualizar el video
 function updateVideo() {
-    videoTitle.textContent = videos[currentVideoIndex].title;
-    videoFrame.src = videos[currentVideoIndex].src;
+    document.getElementById('modulo-title').textContent = videos[current].modulo;
+    document.getElementById('modulo-desc').textContent = videos[current].subtitulo;
+    document.getElementById('video-title').textContent = videos[current].subtitulo;
+    document.getElementById('video-frame').src = videos[current].src;
 
-    // Habilita o deshabilita los botones según el índice actual
-    prevButton.disabled = currentVideoIndex === 0;
-    nextButton.disabled = currentVideoIndex === videos.length - 1;
+    document.getElementById('prev-button').disabled = current === 0;
+    document.getElementById('next-button').disabled = current === videos.length - 1;
 }
 
-// Función para ir al siguiente video
-function showNextVideo() {
-    if (currentVideoIndex < videos.length - 1) {
-        currentVideoIndex++;
+document.getElementById('prev-button').addEventListener('click', function() {
+    if (current > 0) {
+        current--;
         updateVideo();
     }
-}
+});
 
-// Función para ir al video anterior
-function showPrevVideo() {
-    if (currentVideoIndex > 0) {
-        currentVideoIndex--;
+document.getElementById('next-button').addEventListener('click', function() {
+    if (current < videos.length - 1) {
+        current++;
         updateVideo();
     }
-}
-
-// Agrega eventos a los botones
-nextButton.addEventListener("click", showNextVideo);
-prevButton.addEventListener("click", showPrevVideo);
+});
 
 // Inicializa el primer video
 updateVideo();
