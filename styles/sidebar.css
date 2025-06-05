@@ -594,9 +594,9 @@ video {
 }
 
 .circle-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -610,12 +610,12 @@ video {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Llena el círculo y recorta lo que sobra */
-  border-radius: 50%;
+  border-radius: 10%;
   background: #f3f3f3;
 }
 .card-title {
-  font-family: 'Poppins', Arial, sans-serif;
-  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
   color: #ffffff;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -623,7 +623,7 @@ video {
 }
 
 .card-btn {
-  background: #e2d2bb;
+  background: #1e4bb8;
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -659,6 +659,8 @@ video {
     margin-top: 70px;
     transform: translateY(35px);
 } 
+
+
 
 
 
