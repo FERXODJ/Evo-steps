@@ -515,6 +515,13 @@ button:active {
     margin-top: 70px;
 }
 
+video {
+    width: 100%; /* El video ocupará todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción del video */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+
 .video-buttons {
     display: flex;
     justify-content: center;
