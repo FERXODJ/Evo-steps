@@ -661,6 +661,72 @@ video {
 } 
 
 
+/* Contenedor de las aplicaciones */
+.apps-container {
+    display: flex;
+    justify-content: center; /* Centra las aplicaciones horizontalmente */
+    gap: 20px; /* Espaciado entre las aplicaciones */
+    margin-top: 20px;
+}
+
+/* Estilo de cada aplicación */
+.app {
+    text-align: center;
+    background-color: #f9f9f900; /* Fondo claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    width: 250px; /* Ancho fijo para cada tarjeta */
+}
+
+/* Imagen de la aplicación */
+.app-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+/* Texto de la aplicación */
+.app-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* Efecto hover en los botones */
+.app-button:hover {
+    background-color: #45a049; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+/* Estilo del botón */
+.app-button {
+    display: flex; /* Coloca el texto y el logo en una fila */
+    align-items: center; /* Alinea verticalmente el texto y el logo */
+    justify-content: center; /* Centra el contenido dentro del botón */
+    background-color: #1e4bb8; /* Color verde */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1px 1px; /* Espaciado interno */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animación suave */
+    gap: 10px; /* Espaciado entre el texto y el logo */
+    width: 200px; /* Ancho fijo para ambos botones */
+    height: 50px; /* Altura fija para ambos botones */
+    margin: 10px 0; /* Espaciado vertical entre los botones */
+}
+
+/* Estilo del logo dentro del botón */
+.app-logo {
+    width: 40px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
 
 
 
