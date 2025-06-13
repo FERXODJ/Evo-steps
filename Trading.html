@@ -3,25 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evo Steps-Networmarketing</title>
+    <title>Evo Steps - Trading</title>
     <link rel="stylesheet" href="styles/sidebar.css">
-
-    <style>
-        body {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-    margin: 0; /* Elimina márgenes */
-    overflow: hidden; /* Evita el scroll */
-    background-color: #f4f4f4; /* Fondo opcional */
-}
-
-img {
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho de la ventana */
-    height: auto; /* Mantiene la proporción de la imagen */
-}
-    </style>
 </head>
 <body>
     <div class="navbar">
@@ -29,12 +12,102 @@ img {
             <img src="img/loglife.png" alt="Evo-Life" class="logo_life">
         </a>
         <ul class="navbar-menu">
-            <li><a href="plan-de-accion.html" class="active">Atras</a></li>
+            <li><a href="plan-de-accion.html" class="active">Atrás</a></li>
         </ul>
     </div>
 
     <div class="content">
-        <img src="img/Construccion.jpeg" alt="construccion" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+        <h1 class="titulo-trading">Módulo de Trading</h1>
+
+
+        <h1 id="modulo-title3">Apertura del Broker FBS</h1>
+        <a href="https://fbs.partners?ibl=750167&ibp=30813331" class="broker-link">🔗 Página oficial FBS</a>
+
+        <div class="content">
+            <h1 id="modulo-title2">Crea tu Cuenta</h1><br><br><br>
+        
+            <div class="video-container" id="video-container">
+
+                <iframe 
+                    id="video-frame"
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/mdm7TqnACsk" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        
+            <div class="video-buttons">
+                <button class="video-button" id="prev-button" disabled>Atrás</button>
+                <button class="video-button" id="next-button">Siguiente</button>
+            </div>
+        </div>
+        
+        <script src="script/videos2.js"></script>
+
+        <div class="button-container button-container02">
+            <button class="tab-button active" data-content="basico">Índices Sintéticos</button>
+            <button class="tab-button" data-content="avanzado">Binarias</button>
+            <button class="tab-button" data-content="avanzado">Forex</button>
+        </div>
+
+        <div class="trading-section">
+            <div id="basico" class="trading-content active">
+                <div class="trading-text">
+                    <h2 class="trading-title">Índices Sintéticos</h2>
+                    <p class="trading-description">
+                       <strong>PASO 1:</strong> Inicia sesión en la plataforma educativa de EVO Global en el siguiente link <br>
+                        <a href="https://eeducation.live/login/">🔗 https://eeducation.live/login/</a>
+                    </p>
+                </div>
+                <div class="seccion-fast">
+                    <img src="img/fast.png" alt="Fast Start" class="fast-image">
+                    <div class="fast-text">
+                        <p class="fast-title">FAST START</p>
+                        <p>En el menú de la parte izquierda hay una sección que se llama <strong>"Fast Start"</strong> selecciona Índices Sintéticos. Ahí vas a encontrar videos que te van a ayudar a entender lo básico para que puedas comenzar a operar y a tener resultados desde tus primeros días.</p>
+                    </div>
+                </div>
+
+                <div class="trading-text">
+                    <p class="trading-description">
+                       <strong>PASO 2:</strong> Ingresa a las sesiones en vivo en la plataforma primero con tu cuenta demo para practicar y después con cuenta real. El horario lo vas a encontrar en la página principal de la plataforma educativa, y la sección de en vivos en el menú de la izquierda.<br>
+                    </p>
+                </div>
+
+                <div class="trading-image">
+                    <img src="img/Sinteticos.png" alt="Conceptos Básicos" class="trading-image" onclick="openFullscreen(this)">
+                </div>
+            </div>
+
+            <div id="avanzado" class="trading-content">
+                <div class="trading-text">
+                    <h2 class="trading-title">Índices Sintéticos</h2>
+                    <p class="trading-description">
+                        Domina estrategias avanzadas para maximizar tus ganancias. Aprende sobre indicadores técnicos, patrones de velas y estrategias de trading algorítmico.
+                    </p>
+                </div>
+                <div class="trading-image">
+                    <img src="img/trading-avanzado.jpg" alt="Conceptos Avanzados">
+                </div>
+            </div>
+        </div>
     </div>
-    
+
+    <script>
+        function openFullscreen(image) {
+            if (image.requestFullscreen) {
+                image.requestFullscreen(); // Activa el modo de pantalla completa
+            } else if (image.webkitRequestFullscreen) { // Para navegadores WebKit
+                image.webkitRequestFullscreen();
+            } else if (image.msRequestFullscreen) { // Para navegadores IE/Edge
+                image.msRequestFullscreen();
+            }
+        }
+    </script>
+
+    <script src="script/trading.js"></script>
 </body>
+</html>

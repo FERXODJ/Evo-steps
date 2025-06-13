@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
     position: relative; /* Necesario para usar ::before */
+    
 }
 
 body::before {
@@ -727,9 +728,184 @@ video {
     height: auto; /* Mantiene la proporción del logo */
 }
 
+/* Estilo para el título del módulo de Trading */
+.titulo-trading {
+    font-size: 55px;
+    text-align: center;
+    color: #ffffff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transform: translateY(50px);
+}
+
+/* Contenedor de la sección de trading */
+.trading-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    margin-top: 50px; /* Espaciado superior */
+    width: 80%; /* Reduce el ancho del contenedor */
+    max-width: 800px; /* Ancho máximo para evitar que sea demasiado grande */
+    padding: 20px; /* Espaciado interno para que el contenido no quede ajustado */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    margin: auto;
+    transform: translateY(50px); /* Desplaza el contenedor hacia abajo */
+}
+
+/* Secciones individuales */
+.trading-content {
+    display: none;
+    text-align: center;
+}
+
+.trading-content.active {
+    display: block;
+}
+
+.trading-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trading-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000; /* Color del título */
+}
+
+.trading-description{
+    text-align: left;
+    margin-top: 50px;
+}
+
+/* Contenedor de los botones */
+.button-container02 {
+    margin-top: 80px; /* Espaciado superior para separar del título */
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Espaciado entre los botones */
+}
 
 
+#modulo-title2 {
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 70px;
+    transform: translateY(80px);
+    background-color: rgb(68, 143, 255);
+    padding: 15px;
+    width: 300px;
+    margin: 0 auto; /* Centra el elemento horizontalmente */
+    border-radius: 15px;
+}
+
+#modulo-title3 {
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 70px;
+    transform: translateY(80px);
+    background-color: rgb(68, 143, 255);
+    padding: 15px;
+    width: 300px;
+    margin: 0 auto; /* Centra el elemento horizontalmente */
+    border-radius: 15px;
+}
+
+/* Estilo para el enlace */
+.broker-link {
+    display: block; /* Hace que el enlace ocupe toda la línea */
+    text-align: center; /* Centra el enlace horizontalmente */
+    font-size: 1.5rem; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: #ffffff; /* Color azul */
+    /*text-decoration: none; Elimina el subrayado */
+    margin-top: 100px; /* Espaciado superior */
+    transform: translateY(50px); /* Desplaza el enlace hacia abajo */
+}
+
+/* Efecto hover en el enlace */
+.broker-link:hover {
+    color: #4CAF50; /* Cambia el color al pasar el mouse */
+    font-size: 1.7rem;
+}
+
+/* Estilo para las imágenes dentro de trading-section */
+.trading-image {
+    width: 100%; /* Ajusta el ancho inicial */
+    /*max-width: 600px; /* Aumenta el tamaño máximo de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    display: flex;
+    justify-content: center; /* Centra la imagen dentro del contenedor */
+    align-items: center; /* Alinea la imagen verticalmente */
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* Efecto hover para ampliar la imagen */
+.trading-image:hover {
+    transform: scale(1.05); /* Amplía ligeramente la imagen al pasar el mouse */
+    /*box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+}
+
+/* Contenedor principal para Fast Start */
+.seccion-fast {
+    display: flex; /* Coloca la imagen y el texto en una fila */
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    gap: 20px; /* Espaciado entre la imagen y el texto */
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
+    max-width: 800px; /* Limita el ancho máximo del contenedor */
+    padding: 20px; /* Espaciado interno */
+    background-color: rgba(255, 255, 255, 0); /* Fondo blanco con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+/* Estilo para la imagen */
+.fast-image {
+    width: 350px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 50px;
+}
+
+/* Contenedor de texto */
+.fast-text {
+    flex: 1; /* Hace que el texto ocupe el espacio restante */
+}
+
+/* Título de Fast Start */
+.fast-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Texto descriptivo */
+.fast-text p {
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.5; /* Mejora la legibilidad */
+    text-align: left; /* Alinea el texto de izquierda a derecha */
+}
 
 
-
- 
