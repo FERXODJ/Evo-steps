@@ -1147,18 +1147,18 @@ video {
 @media (max-width: 480px) {
     /* Ajusta el título principal para pantallas más pequeñas */
     .titulo-home {
-        font-size: 2rem; /* Reduce aún más el tamaño del texto */
+        font-size: 2.2rem; /* Reduce aún más el tamaño del texto */
     }
 
     /* Ajusta el subtítulo */
     .sutitulo-home {
-        font-size: 1rem; /* Reduce el tamaño del subtítulo */
+        font-size: 1.7rem; /* Reduce el tamaño del subtítulo */
         margin-top: 50px;
     }
 
     /* Ajusta el segundo subtítulo */
     .sutitulo-home2 {
-        font-size: 0.9rem; /* Reduce el tamaño del texto */
+        font-size: 1rem; /* Reduce el tamaño del texto */
         margin-top: -20px;
     }
 
