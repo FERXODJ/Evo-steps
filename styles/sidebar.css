@@ -1166,6 +1166,28 @@ video {
     .video-container video {
         max-width: 300px; /* Reduce el tamaño máximo del video */
     }
+
+    .subtitulo-descripcion{
+        font-size: 1rem;
+        margin-top: -50px;
+    }
+
+    .tab-button{
+        width: 75%;
+        margin: auto;
+    }
+
+    .training-section{
+        height:fit-content; /* Ajusta la altura al contenido */
+    }
+
+    .subtitulo-descripcion{
+        margin-top: 20px;
+    }
+
+    .primeros-pasos-texto{
+        font-size: 1.7rem;
+    }
 }
 
 
