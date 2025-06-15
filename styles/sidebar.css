@@ -1000,4 +1000,112 @@ video {
     }
 }
 
+@media (max-width: 768px) {
+    .video-container video {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .training-section {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        padding: 10px; /* Reduce el espaciado interno */
+    }
+
+    .training-content {
+        margin-bottom: 20px; /* Espaciado entre secciones */
+    }
+
+    .training-title {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+
+    .training-description {
+        font-size: 1rem; /* Reduce el tamaño del texto */
+    }
+}
+
+@media (max-width: 768px) {
+    .apps-container {
+        flex-direction: column; /* Coloca las aplicaciones en una columna */
+        gap: 15px; /* Espaciado entre aplicaciones */
+    }
+
+    .app {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .app-icon {
+        width: 80px; /* Ajusta el tamaño de los íconos */
+        height: auto; /* Mantiene la proporción */
+    }
+
+    .video-container iframe {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column; /* Coloca las tarjetas en una columna */
+        gap: 20px; /* Espaciado entre tarjetas */
+    }
+
+    .card {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .circle-image img {
+        width: 100px; /* Ajusta el tamaño de las imágenes */
+        height: auto; /* Mantiene la proporción */
+    }
+
+    .card-btn {
+        font-size: 1rem; /* Reduce el tamaño del texto del botón */
+        padding: 10px 20px; /* Ajusta el relleno del botón */
+    }
+}
+
+@media (max-width: 768px) {
+    .trading-section {
+        flex-direction: column; /* Coloca las secciones en una columna */
+        padding: 10px; /* Reduce el espaciado interno */
+    }
+
+    .trading-content {
+        margin-bottom: 20px; /* Espaciado entre secciones */
+    }
+
+    .trading-title {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+
+    .trading-description {
+        font-size: 1rem; /* Reduce el tamaño del texto */
+    }
+
+    .trading-image img {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+}
+
+@media (max-width: 768px) {
+    .video-container iframe {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .video-buttons button {
+        font-size: 1rem; /* Reduce el tamaño del texto del botón */
+        padding: 10px 20px; /* Ajusta el relleno del botón */
+        width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+        margin: 10px 0; /* Espaciado entre botones */
+    }
+}
+
+
+
 

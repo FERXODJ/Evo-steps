@@ -1,3 +1,5 @@
+
+// Evento para el botón de carga
 document.getElementById('boton-carga').addEventListener('click', function () {
     const overlay = document.getElementById('cargando-overlay');
 
@@ -10,8 +12,6 @@ document.getElementById('boton-carga').addEventListener('click', function () {
         window.location.href = 'home.html'; // Cambia 'home.html' por la URL de tu página de inicio
     }, 5000);
 });
-
-
 
 
 
