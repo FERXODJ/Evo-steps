@@ -908,3 +908,96 @@ video {
 }
 
 
+/* Adaptación para pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+    /* Ajusta el título principal */
+    .titulo {
+        font-size: 1.5rem; /* Reduce el tamaño del texto */
+        text-align: center; /* Centra el texto */
+        margin: 10px 0; /* Ajusta el espaciado */
+    }
+
+    /* Ajusta el subtítulo */
+    .subtitulo {
+        font-size: 1rem; /* Reduce el tamaño del subtítulo */
+        text-align: center; /* Centra el texto */
+        margin: 10px 0; /* Ajusta el espaciado */
+    }
+
+    /* Ajusta el logo */
+    .logo {
+        max-width: 150px; /* Reduce el tamaño máximo del logo */
+        margin: auto; /* Centra el logo */
+    }
+
+    /* Ajusta los botones */
+    .boton {
+        font-size: 0.9rem; /* Reduce el tamaño del texto del botón */
+        padding: 8px 15px; /* Ajusta el relleno del botón */
+        width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
+        margin: 10px 0; /* Espaciado entre botones */
+    }
+
+    /* Ajusta las imágenes */
+    .trading-image {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        max-width: 300px; /* Limita el tamaño máximo */
+        margin: auto; /* Centra la imagen */
+    }
+
+    /* Ajusta las secciones */
+    .trading-section {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        padding: 10px; /* Reduce el espaciado interno */
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    /* Ajusta el contenedor de botones */
+    .button-container {
+        flex-direction: column; /* Coloca los botones en una columna */
+        gap: 10px; /* Espaciado entre botones */
+    }
+
+    /* Ajusta el texto */
+    .trading-text {
+        text-align: center; /* Centra el texto */
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+        margin: 10px 0; /* Ajusta el espaciado */
+    }
+
+    /* Ajusta el contenedor principal */
+    .content {
+        padding: 10px; /* Reduce el espaciado interno */
+        width: 100%; /* Ocupa todo el ancho disponible */
+    }
+}
+
+/* Adaptación para pantallas muy pequeñas (teléfonos pequeños) */
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.2rem; /* Reduce aún más el tamaño del texto */
+    }
+
+    .subtitulo {
+        font-size: 0.9rem; /* Reduce el tamaño del subtítulo */
+    }
+
+    .logo {
+        max-width: 120px; /* Reduce el tamaño máximo del logo */
+    }
+
+    .boton {
+        font-size: 0.8rem; /* Reduce el tamaño del texto del botón */
+        padding: 6px 10px; /* Ajusta el relleno del botón */
+    }
+
+    .trading-image {
+        max-width: 250px; /* Reduce el tamaño máximo de la imagen */
+    }
+
+    .trading-section {
+        padding: 5px; /* Reduce el espaciado interno */
+    }
+}
+
+
