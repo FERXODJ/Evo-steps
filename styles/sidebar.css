@@ -1106,13 +1106,6 @@ video {
         width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
         margin: 10px 0; /* Espaciado entre botones */
     }
-
-    .video-container video {
-        width: 100%; /* Ocupa todo el ancho disponible */
-        height: 300px; /* Ajusta la altura del video */
-        max-width: 100%; /* Limita el ancho máximo */
-        margin: auto; /* Centra el video */
-    }
 }
 
 @media (max-width: 768px) {
@@ -1124,7 +1117,7 @@ video {
 
     /* Ajusta el título principal */
     .titulo-home {
-        font-size: 2rem; /* Reduce el tamaño del texto */
+        font-size: 10rem; /* Reduce el tamaño del texto */
         line-height: 1.2; /* Ajusta el espaciado entre líneas */
         margin-bottom: 10px; /* Reduce el espaciado inferior */
     }
@@ -1154,7 +1147,7 @@ video {
 @media (max-width: 480px) {
     /* Ajusta el título principal para pantallas más pequeñas */
     .titulo-home {
-        font-size: 1.5rem; /* Reduce aún más el tamaño del texto */
+        font-size: 2rem; /* Reduce aún más el tamaño del texto */
     }
 
     /* Ajusta el subtítulo */
