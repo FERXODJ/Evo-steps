@@ -1,4 +1,13 @@
 
+function toggleMobileSidebar() {
+    const sidebar = document.getElementById('mobile-sidebar');
+    if (sidebar.style.display === 'block') {
+        sidebar.style.display = 'none'; // Oculta el sidebar si está visible
+    } else {
+        sidebar.style.display = 'block'; // Muestra el sidebar si está oculto
+    }
+}
+
 // Evento para el botón de carga
 document.getElementById('boton-carga').addEventListener('click', function () {
     const overlay = document.getElementById('cargando-overlay');
