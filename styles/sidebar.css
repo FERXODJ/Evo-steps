@@ -1198,7 +1198,7 @@ video {
 
 /* Ícono de menú para teléfonos */
 .hamburger-menu {
-    display: none; /* Oculta el ícono en pantallas grandes */
+    display: flex; /* Muestra el ícono en teléfonos */
     position: fixed; /* Fija el ícono en la parte superior */
     top: 10px;
     left: 10px;
@@ -1208,7 +1208,6 @@ video {
     height: 50px; /* Tamaño del contenedor del ícono */
     background-color: #007BFF; /* Color azul del círculo */
     border-radius: 50%; /* Hace que el fondo sea un círculo */
-    display: flex; /* Usa flexbox para centrar el ícono */
     justify-content: center; /* Centra horizontalmente el ícono */
     align-items: center; /* Centra verticalmente el ícono */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra para dar profundidad */
@@ -1221,18 +1220,12 @@ video {
 
 /* Sidebar para teléfonos */
 .mobile-sidebar {
-    display: none; /* Oculta el sidebar por defecto */
-    position: fixed; /* Fija el sidebar en la pantalla */
-    top: 0;
-    left: 0;
-    width: 70%; /* Ancho del sidebar en teléfonos */
-    height: 100%; /* Ocupa toda la altura de la pantalla */
-    background-color: #333; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
-    z-index: 999; /* Asegura que esté encima de otros elementos */
-    padding: 20px; /* Espaciado interno */
-    overflow-y: auto; /* Permite desplazarse si el contenido es largo */
+    transform: translateX(-100%); /* Oculta el sidebar fuera de la pantalla */
+    transition: transform 0.3s ease; /* Animación suave */
+}
+
+.mobile-sidebar.active {
+    transform: translateX(0); /* Muestra el sidebar */
 }
 
 /* Estilo para los enlaces del sidebar */
