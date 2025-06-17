@@ -1228,7 +1228,7 @@ video {
     left: 0;
     width: 40%; /* Ancho del sidebar */
     height: 100%; /* Ocupa toda la altura de la pantalla */
-    background-color: #333333; /* Color de fondo */
+    background-color: #010e3a; /* Color de fondo */
     color: #fff; /* Color del texto */
     z-index: 999; /* Asegura que esté encima de otros elementos */
     padding: 20px; /* Espaciado interno */
@@ -1251,15 +1251,15 @@ video {
 }
 
 .mobile-sidebar-menu a {
+    
+    transform: translateY(80px);
+    margin-top: 40px;
     text-decoration: none; /* Elimina el subrayado */
     color: #fff; /* Color del texto */
     font-size: 1.2rem; /* Tamaño del texto */
     display: block; /* Hace que los enlaces ocupen toda la línea */
     transition: color 0.3s ease; /* Animación suave al pasar el mouse */
-}
-
-.mobile-sidebar-menu a:hover {
-    color: #4CAF50; /* Cambia el color al pasar el mouse */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Media Query para pantallas pequeñas */
