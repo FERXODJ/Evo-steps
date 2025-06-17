@@ -1262,6 +1262,25 @@ video {
     }
 }
 
+/* Oculta el ícono de menú y el sidebar en pantallas grandes */
+@media (min-width: 769px) {
+    .hamburger-menu,
+    .mobile-sidebar {
+        display: none; /* Oculta el ícono y el sidebar */
+    }
+}
+
+/* Muestra el ícono de menú y el sidebar solo en pantallas pequeñas */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex; /* Muestra el ícono en teléfonos */
+    }
+
+    .mobile-sidebar {
+        display: none; /* Oculta el sidebar por defecto */
+    }
+}
+
 
 
 
