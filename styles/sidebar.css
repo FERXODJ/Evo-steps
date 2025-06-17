@@ -1262,6 +1262,18 @@ video {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.mobile-sidebar-menu a.active {
+    background-color: #3b1bf094; /* Relleno verde */
+    color: white; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Animación suave */
+}
+
+.mobile-sidebar-menu a.active:hover {
+    background-color: #3b1bf094; /* Un verde más oscuro al pasar el mouse */
+}
+
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
     .hamburger-menu {
