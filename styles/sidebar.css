@@ -23,9 +23,10 @@ body::before {
     width: 100%; /* Ocupa todo el ancho de la pantalla */
     background-color: #010e3a; /* Fondo oscuro */
     color: white;
-    display: flex; /* Habilita flexbox */
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 15px 15px; /* Reduce el espacio interno para mantener el tamaño compacto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra debajo del navbar */
     position: fixed; /* Fija el navbar en la parte superior */
     top: 0;
@@ -39,12 +40,12 @@ body::before {
 .navbar-menu {
     list-style: none;
     display: flex; /* Coloca los elementos en línea */
-    margin: 0 auto 0 250px; /* Centra el menú horizontalmente */
+    margin: 0;
     padding: 0;
 }
 
 .navbar-menu li {
-    margin: 0 30px; /* Espaciado entre los elementos */
+    margin: 0 20px; /* Espaciado entre los elementos */
 }
 
 .navbar-menu a {
@@ -1198,15 +1199,15 @@ video {
 
 /* Ícono de menú para teléfonos */
 .hamburger-menu {
-    display: flex; /* Muestra el ícono en teléfonos */
+    display: none; /* Oculta el ícono por defecto */
     position: fixed; /* Fija el ícono en la parte superior */
     top: 10px;
-    left: 10px;
+    right: 10px; /* Cambia de 'left' a 'right' para moverlo al lado derecho */
     z-index: 1000; /* Asegura que esté encima de otros elementos */
     cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
     width: 50px; /* Tamaño del contenedor del ícono */
     height: 50px; /* Tamaño del contenedor del ícono */
-    background-color: #007BFF; /* Color azul del círculo */
+    background-color: #ffffffe3; /* Color azul del círculo */
     border-radius: 50%; /* Hace que el fondo sea un círculo */
     justify-content: center; /* Centra horizontalmente el ícono */
     align-items: center; /* Centra verticalmente el ícono */
@@ -1222,6 +1223,16 @@ video {
 .mobile-sidebar {
     transform: translateX(-100%); /* Oculta el sidebar fuera de la pantalla */
     transition: transform 0.3s ease; /* Animación suave */
+    position: fixed; /* Fija el sidebar en la pantalla */
+    top: 0;
+    left: 0;
+    width: 40%; /* Ancho del sidebar */
+    height: 100%; /* Ocupa toda la altura de la pantalla */
+    background-color: #333333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    z-index: 999; /* Asegura que esté encima de otros elementos */
+    padding: 20px; /* Espaciado interno */
+    overflow-y: auto; /* Permite desplazarse si el contenido es largo */
 }
 
 .mobile-sidebar.active {
@@ -1258,11 +1269,13 @@ video {
     }
 
     .navbar {
-        display: none; /* Oculta el navbar en teléfonos */
+        display: flex; /* Mantiene el navbar visible en pantallas grandes */
+        justify-content: space-between; /* Asegura que el logo y el menú estén separados */
+        align-items: center; /* Centra verticalmente los elementos */
     }
 }
 
-/* Oculta el ícono de menú y el sidebar en pantallas grandes */
+/* Media Query para pantallas grandes */
 @media (min-width: 769px) {
     .hamburger-menu,
     .mobile-sidebar {
@@ -1270,17 +1283,24 @@ video {
     }
 }
 
-/* Muestra el ícono de menú y el sidebar solo en pantallas pequeñas */
+/* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Oculta el menú en pantallas pequeñas */
+    }
+
     .hamburger-menu {
         display: flex; /* Muestra el ícono en teléfonos */
     }
-
-    .mobile-sidebar {
-        display: none; /* Oculta el sidebar por defecto */
-    }
 }
 
+/* Media Query para pantallas grandes */
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none; /* Oculta el ícono en pantallas grandes */
+    }
 
-
-
+    .navbar-menu {
+        display: flex; /* Muestra el menú en pantallas grandes */
+    }
+}
