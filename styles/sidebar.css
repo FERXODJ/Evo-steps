@@ -1316,3 +1316,88 @@ video {
         display: flex; /* Muestra el menú en pantallas grandes */
     }
 }
+
+/*PRIEMEROS PASOS*/
+
+@media (max-width: 768px) {
+
+    /* Ajusta el título principal */
+    .sutitulo-pasos {
+        font-size: 2.3rem; /* Reduce el tamaño del texto */
+        line-height: 1.2; /* Ajusta el espaciado entre líneas */
+        text-align: center; /* Centra el texto */
+    }
+}
+
+@media (max-width: 768px) {
+    .sutitulo-pasos2 {
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 1.2;
+        word-break: break-word;
+        white-space: normal;
+        overflow-wrap: break-word;
+        max-width: 90vw;         /* Usa el 90% del ancho de la pantalla */
+        box-sizing: border-box;
+        padding: 0 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 10vh;        /* Centra verticalmente (ajusta según necesidad) */
+        margin-bottom: 0;
+        color: #fff;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+@media (max-width: 768px) {
+    .paso1-1{
+         font-size: 1.7rem;
+        text-align: center;
+        line-height: 1.2;
+        word-break: break-word;
+        white-space: normal;
+        overflow-wrap: break-word;
+        max-width: 90vw;         /* Usa el 90% del ancho de la pantalla */
+        box-sizing: border-box;
+        padding: 0 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 5vh;        /* Centra verticalmente (ajusta según necesidad) */
+        margin-bottom: 0;
+        color: #fff;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+@media (max-width: 768px) {
+    .apps-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra las apps horizontalmente */
+        justify-content: center; /* Centra verticalmente si el contenedor tiene altura */
+        gap: 2px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .app {
+        width: 90vw; /* Ocupa casi todo el ancho de la pantalla */
+        max-width: 350px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .plan-accion-container {
+        margin-bottom: 60px;
+        margin-top: 5vh;
+    }
+}
