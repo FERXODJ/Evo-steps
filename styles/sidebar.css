@@ -1401,3 +1401,41 @@ video {
         margin-top: 5vh;
     }
 }
+
+/*PLAN DE ACCION*/
+
+@media (max-width: 768px) {
+    .titulo-plan-de-accion {
+        font-size: 2.3rem;
+        line-height: 1.2;
+        text-align: center;
+        margin-top: 250px;    /* Más espacio arriba */
+        transform: translateY(-180px);
+    }
+
+    .circle-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+        display: block;
+    }
+
+    .circle-image {
+        width: 55vw;
+        max-width: 350px;
+        height: 200px;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #fff;
+        margin: 0 auto 18px auto;
+    }
+
+    .card-btn {
+        padding: 10px 50px;
+        border-radius: 15px;
+    }
+}
+
+
+
