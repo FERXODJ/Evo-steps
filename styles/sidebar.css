@@ -1440,29 +1440,11 @@ video {
 /*NETWORK*/
 @media (max-width: 768px) {
     html, body {
-        min-width: 100vw;
-        max-width: 100vw;
-        width: 100vw;
-        overflow-x: hidden !important;
+        min-height: 100vh;
+        height: 100vh;
+        overflow-x: hidden;
         box-sizing: border-box;
-    }
-    body {
-        position: relative;
-    }
-    .content,
-    .cards-container,
-    .app,
-    .apps-container,
-    .trading-section,
-    .training-section {
-        width: 100vw !important;
-        max-width: 100vw !important;
-        min-width: 0 !important;
-        box-sizing: border-box;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        overflow-x: hidden !important;
-    }
+    }   
+
+    
 }
