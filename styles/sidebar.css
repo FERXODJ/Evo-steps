@@ -1448,3 +1448,129 @@ video {
 
     
 }
+
+/*SECCION DE TRADING*/
+
+/* Tarjetas de trading */
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 200px;
+}
+
+.tarjeta-trading {
+    background: #181c2f;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    padding: 20px 18px 24px 18px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.tarjeta-trading:hover {
+    transform: translateY(-6px) scale(1.03);
+}
+
+.imagen-tarjeta {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 18px;
+}
+
+.boton-tarjeta {
+    margin-top: 8px;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 50px;
+    background: #265bb5;
+    color: #fff;
+    font-size: 1.3em;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.boton-tarjeta:hover {
+    background: #2f6fe6;
+}
+
+/*ADAPTACION A TELEFONOS TRADING*/
+
+@media (max-width: 768px) {
+
+    .titulo-trading{
+        font-size: 3.0em;
+    }
+
+    .contenedor-tarjetas {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin-top: 150px;
+    }
+    .tarjeta-trading {
+        width: 75vw;
+        max-width: 340px;
+        padding: 14px 8px 18px 8px;
+    }
+    .imagen-tarjeta {
+        width: 55vw;
+        max-width: 300px;
+        height: 180px;
+        margin-bottom: 12px;
+    }
+    .boton-tarjeta {
+        font-size: 1em;
+        padding: 10px 0;
+        width: 65%;
+        border-radius: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .tarjeta-trading:last-child {
+        margin-bottom: 60px; /* Espacio extra debajo de la última tarjeta */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none !important; /* Oculta todos los menús por defecto */
+    }
+    .boton-atras {
+        display: flex !important; /* Solo muestra el menú con esta clase */
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        position: static;
+    }
+    .boton-atras li {
+        margin: 0 10px 0 0;
+        list-style: none;
+        transform: translateX(-50px);
+    }
+    .boton-atras a {
+        font-size: 1.1em;
+        padding: 8px 18px;
+        border-radius: 8px;
+        background: #265bb5;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+    }
+    .boton-atras a.active,
+    .boton-atras a:hover {
+        background: #2f6fe6;
+    }
+}
+
