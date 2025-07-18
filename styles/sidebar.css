@@ -1755,3 +1755,8 @@ video {
 .titulo-trading01{
     margin-top: 130px;
 }
+
+/* Espacio extra al final del video */
+.espacio-inferior {
+    margin-bottom: 60px;
+}
