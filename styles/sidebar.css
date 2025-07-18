@@ -1039,6 +1039,36 @@ video {
     .app-icon {
         width: 80px; /* Ajusta el tamaño de los íconos */
         height: auto; /* Mantiene la proporción */
+        transform: translateX(-20px); /* Desplaza los íconos hacia la izquierda */
+    }
+
+    .app-text{
+        transform: translateX(-20px); /* Desplaza el texto hacia la izquierda */
+    }
+
+    .app-button {
+        transform: translateX(-20px); /* Desplaza el botón hacia la izquierda */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1e4bb8;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1px 1px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        gap: 10px;
+        width: 200px;
+        height: 50px;
+        margin: 10px 0;
+    }
+
+    .app-button:hover {
+        background-color: #45a049;
+        transform: translateX(-20px) scale(1.05); /* Mantiene la posición y solo escala */
     }
 
     .video-container iframe {
@@ -1514,7 +1544,7 @@ video {
         flex-direction: column;
         align-items: center;
         gap: 50px;
-        margin-top: 150px;
+        margin-top: 90px;
     }
     .tarjeta-trading {
         width: 75vw;
@@ -1609,6 +1639,24 @@ video {
         box-sizing: border-box;
         
     }
+
+    #modulo-title{
+        font-size: 1.2rem;
+        width: 200px;
+    }
+
+    #modulo-desc{
+        font-size:25px;
+        text-align: center;
+        color: #ffffff;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        margin-top: 70px;
+        transform: translateY(35px);
+        margin-bottom: 100px;
+    }
+
     .broker-link {
         font-size: 1.3rem;
         margin-top: 30px;
