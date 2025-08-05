@@ -1,26 +1,21 @@
 const videos = [
     {
-        modulo: "Crea tu cuenta",
-        src: "https://www.youtube.com/embed/mdm7TqnACsk"
+        modulo: "Crea tu cuenta en FxPro",
+        src: "https://www.youtube.com/embed/mEvHc_WuQrg"
     },
     {
-        modulo: "Verifica tu cuenta",
-        src: "https://www.youtube.com/embed/489reE55R5Q" // Reemplaza VIDEO_ID_2 con el ID del segundo video
-    },
-
-    {
-        modulo: "Recarga tu cuenta ",
-        src: "https://www.youtube.com/embed/m0-QWM6CO3c" // Reemplaza VIDEO_ID_2 con el ID del segundo video
+        modulo: "Configurar y Utilizar MT5 en tu PC",
+        src: "https://www.youtube.com/embed/h4QyKVNwSww" // Reemplaza VIDEO_ID_2 con el ID del segundo video
     },
 
     {
-        modulo: "Aprende a copiar y pegar con Evo signal",
-        src: "https://www.youtube.com/embed/IdopqIMmPDk" // Reemplaza VIDEO_ID_2 con el ID del segundo video
+        modulo: "Configurar y Utilizar MT5 en Android",
+        src: "https://www.youtube.com/embed/E5RXPqGjQ-8" // Reemplaza VIDEO_ID_2 con el ID del segundo video
     },
 
     {
-        modulo: "Realiza break even y toma parciales",
-        src: "https://www.youtube.com/embed/ABmq5Nfke3k" // Reemplaza VIDEO_ID_2 con el ID del segundo video
+        modulo: "Configurar y Utilizar MT5 en Iphone",
+        src: "https://www.youtube.com/embed/izdeBVYY3D0" // Reemplaza VIDEO_ID_2 con el ID del segundo video
     },
 
     {
