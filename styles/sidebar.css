@@ -846,6 +846,10 @@ video {
     font-size: 1.7rem;
 }
 
+.mt5-link{
+    transform: translateY(20px);
+}
+
 /* Estilo para las imágenes dentro de trading-section */
 .trading-image {
     width: 100%; /* Ajusta el ancho inicial */
